@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Landing Page</title>
-    <script type="module" crossorigin src="./assets/index-UNqw8cdZ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DmQ51IaW.css">
+    <script type="module" crossorigin src="./assets/index-GotWRlHP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BtGkhiek.css">
   </head>
   <body class="antialiased">
     <!-- Navigation -->
@@ -121,10 +121,10 @@
               </marker>
             </defs>
             <!-- Connection lines -->
-            <path class="animated-line" d="M 380 380 L 540 280" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.2s;" />
-            <path class="animated-line" d="M 680 280 L 860 280" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.6s;" />
-            <path class="animated-line" d="M 680 240 L 860 200" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.6s;" />
-            <path class="animated-line" d="M 680 320 L 860 360" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.6s;" />
+            <path class="animated-line" d="M 380 380 L 520 350" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.2s;" />
+            <path class="animated-line" d="M 380 230 L 860 140" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 0.4s;" />
+            <path class="animated-line" d="M 380 310 L 860 240" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 0.6s;" />
+              <path class="animated-line" d="M 720 350 L 860 360" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)" style="animation-delay: 1.6s;" />
             <!-- Return arrow from Sensitive API to Encrypted Sub-Agent -->
             <path class="animated-line return-arrow" d="M 860 380 Q 700 450 370 400" stroke="#10b981" stroke-width="2" fill="none" stroke-dasharray="5,5" marker-end="url(#arrowhead-green)" style="animation-delay: 2.4s;" />
           </svg>
@@ -175,24 +175,24 @@
           </div>
 
           <!-- Credential Gateway (Center) -->
-          <div class="node credential-gateway" style="top: 245px; left: 540px;">
+          <div class="node credential-gateway" style="top: 330px; left: 540px;">
             <div class="gateway-badge">🔐 Credential Gateway</div>
           </div>
 
           <!-- Flow annotations for gateway -->
-          <div class="flow-step-inline animated-popup" style="top: 250px; left: 455px; animation-delay: 1.4s;">
+          <div class="flow-step-inline animated-popup" style="top: 330px; left: 455px; animation-delay: 1.4s;">
             <span class="step-number">2</span>
             <span class="step-text-small">Agent Creates<br>Authenticated Request</span>
           </div>
 
-          <div class="flow-step-inline animated-popup" style="top: 320px; left: 465px; animation-delay: 2.0s;">
+          <div class="flow-step-inline animated-popup" style="top: 440px; left: 465px; animation-delay: 2.0s;">
             <span class="step-number">3</span>
             <span class="step-text-small">E2EE Sensitive<br>Data Response</span>
           </div>
 
           <!-- Right Side Services -->
           <!-- MCP Server -->
-          <div class="node service-box mcp-server" style="top: 140px; right: 40px;">
+          <div class="node service-box mcp-server" style="top: 50px; right: 40px;">
             <div class="service-header">
               <span class="service-icon">💾</span>
               <span class="service-title">MCP Server</span>
@@ -205,7 +205,7 @@
           </div>
 
           <!-- Public API -->
-          <div class="node service-box public-api" style="top: 260px; right: 40px;">
+          <div class="node service-box public-api" style="top: 200px; right: 40px;">
             <div class="service-header">
               <span class="service-icon">🌐</span>
               <span class="service-title">Public API</span>
@@ -213,7 +213,7 @@
           </div>
 
           <!-- Sensitive API -->
-          <div class="node service-box sensitive-api" style="top: 340px; right: 40px;">
+          <div class="node service-box sensitive-api" style="top: 310px; right: 40px;">
             <div class="service-header">
               <span class="service-icon">🔒</span>
               <span class="service-title">Sensitive API</span>
@@ -235,6 +235,7 @@
           <h2 class="text-4xl font-bold text-gray-900 mb-6">Secure by design</h2>
           <p class="text-lg text-gray-600 leading-relaxed">Use advanced encryption techniques such as fully homomorphic encryption (FHE) to ensure that sensitive data remains encrypted throughout processing. Our system allows AI agents to perform computations on encrypted data without ever exposing the raw information.</p>
         </div>
+          <div>TODO 1.2.3 features</div>
       </div>
     </section>
 
@@ -475,21 +476,21 @@
 
 
     <!-- CTA Section -->
-    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-4xl font-bold  mb-6">Get Started with StartupName?</h2>
-            <p class="text-xl mb-8">Join thousands of companies already using our platform to transform their business.</p>
+            <h2 class="text-4xl font-bold text-white mb-6">Get Started with StartupName?</h2>
+            <p class="text-xl text-blue-100 mb-8">Join thousands of companies already using our platform to transform their business.</p>
             <form id="cta-form" class="flex gap-4 max-w-md mx-auto flex-col sm:flex-row">
                 <input
                         type="email"
                         placeholder="Enter your email"
-                        class="flex-1 px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 ring-black"
+                        class="flex-1 px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 border-white"
                         name="email"
                         required
                 />
                 <button
                         type="submit"
-                        class="text-white bg-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+                        class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
                 >
                     Sign Up
                 </button>
