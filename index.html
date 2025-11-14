@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Landing Page</title>
-    <script type="module" crossorigin src="./assets/index-GotWRlHP.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BtGkhiek.css">
+    <script type="module" crossorigin src="./assets/index-YqvBneV8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BAHOL6Lx.css">
   </head>
   <body class="antialiased">
     <!-- Navigation -->
@@ -248,25 +248,31 @@
 
             <!-- Demo Container -->
             <div class="demo-container">
-                <!-- Chat Interface -->
-                <div class="demo-chat">
-                    <div class="demo-input-wrapper">
-                        <input
-                                id="demo-input"
-                                type="text"
-                                placeholder="Ask a question..."
-                                value="compute my average spending in the last month"
-                                class="demo-input"
-                        />
-                        <button id="demo-send-btn" class="demo-send-btn">
-                            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
-                            </svg>
-                        </button>
+                <!-- Chat Messages Area -->
+                <div class="chat-messages" id="chat-messages">
+                    <!-- User message will appear here -->
+                    <div id="user-message" class="chat-message user-message hidden">
+                        <div class="message-content">
+                            compute my average spending in the last month
+                        </div>
+                    </div>
+
+                    <!-- Agent response -->
+                    <div id="agent-response" class="chat-message agent-message hidden">
+                        <div class="agent-avatar">🤖</div>
+                        <div class="message-content">
+                            <div class="typing-indicator hidden" id="typing-indicator">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="response-text hidden" id="response-text">
+                                Your average spending last month was <strong>$2,847.32</strong>
+                                <div class="response-meta">Calculated from encrypted data • Zero exposure</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Demo Visualization -->
+                <!-- Agent Visualization (Collapsible) -->
                 <div id="demo-viz" class="demo-visualization hidden">
                     <!-- Status Text -->
                     <div id="demo-status" class="demo-status">
@@ -299,14 +305,23 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Result -->
-                    <div id="demo-result" class="demo-result hidden">
-                        <div class="demo-result-icon">✓</div>
-                        <div class="demo-result-text">
-                            <strong>Average Spending:</strong> $2,847.32
-                            <div class="demo-result-subtext">Calculated from encrypted data</div>
-                        </div>
+                <!-- Chat Input -->
+                <div class="demo-chat">
+                    <div class="demo-input-wrapper">
+                        <input
+                                id="demo-input"
+                                type="text"
+                                placeholder="Ask a question..."
+                                value="compute my average spending in the last month"
+                                class="demo-input"
+                        />
+                        <button id="demo-send-btn" class="demo-send-btn">
+                            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
