@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Landing Page</title>
-    <script type="module" crossorigin src="./assets/index-F2CvlIYd.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C5ieucTM.css">
+    <script type="module" crossorigin src="./assets/index-UNqw8cdZ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DmQ51IaW.css">
   </head>
   <body class="antialiased">
     <!-- Navigation -->
@@ -238,6 +238,81 @@
       </div>
     </section>
 
+
+    <!-- Demo Section -->
+    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-600 to-purple-600">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-white mb-4 text-center">Try Eddie the Agent</h2>
+            <p class="text-xl text-blue-100 mb-12 text-center">See how our encrypted agents work in real-time</p>
+
+            <!-- Demo Container -->
+            <div class="demo-container">
+                <!-- Chat Interface -->
+                <div class="demo-chat">
+                    <div class="demo-input-wrapper">
+                        <input
+                                id="demo-input"
+                                type="text"
+                                placeholder="Ask a question..."
+                                value="compute my average spending in the last month"
+                                class="demo-input"
+                        />
+                        <button id="demo-send-btn" class="demo-send-btn">
+                            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Demo Visualization -->
+                <div id="demo-viz" class="demo-visualization hidden">
+                    <!-- Status Text -->
+                    <div id="demo-status" class="demo-status">
+                        Initializing...
+                    </div>
+
+                    <!-- Agent Boxes -->
+                    <div class="demo-agents-container">
+                        <!-- Planner Agent -->
+                        <div id="planner-agent" class="demo-agent-box hidden">
+                            <div class="demo-agent-header">
+                                <span class="demo-agent-icon">🤖</span>
+                                <span class="demo-agent-title">Planner Agent</span>
+                            </div>
+                            <div class="demo-agent-status">
+                                <div class="loading-spinner"></div>
+                                <span class="demo-agent-text">Analyzing request...</span>
+                            </div>
+                        </div>
+
+                        <!-- Encrypted Agent -->
+                        <div id="encrypted-agent" class="demo-agent-box encrypted hidden">
+                            <div class="demo-agent-header">
+                                <span class="demo-agent-icon">🔐</span>
+                                <span class="demo-agent-title">Encrypted Agent</span>
+                            </div>
+                            <div class="demo-agent-status">
+                                <div class="loading-spinner"></div>
+                                <span class="demo-agent-text">Accessing Secure Banking API...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result -->
+                    <div id="demo-result" class="demo-result hidden">
+                        <div class="demo-result-icon">✓</div>
+                        <div class="demo-result-text">
+                            <strong>Average Spending:</strong> $2,847.32
+                            <div class="demo-result-subtext">Calculated from encrypted data</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Comparison Section -->
     <section id="comparison" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
       <div class="max-w-6xl mx-auto">
@@ -398,28 +473,30 @@
       </div>
     </section> -->
 
+
     <!-- CTA Section -->
-    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600">
-      <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold text-white mb-6">Get Started with StartupName?</h2>
-        <p class="text-xl text-blue-100 mb-8">Join thousands of companies already using our platform to transform their business.</p>
-        <form id="cta-form" class="flex gap-4 max-w-md mx-auto flex-col sm:flex-row">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="flex-1 px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
-            name="email"
-            required
-          />
-          <button
-            type="submit"
-            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
-          >
-            Sign Up
-          </button>
-        </form>
-      </div>
+    <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold  mb-6">Get Started with StartupName?</h2>
+            <p class="text-xl mb-8">Join thousands of companies already using our platform to transform their business.</p>
+            <form id="cta-form" class="flex gap-4 max-w-md mx-auto flex-col sm:flex-row">
+                <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="flex-1 px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 ring-black"
+                        name="email"
+                        required
+                />
+                <button
+                        type="submit"
+                        class="text-white bg-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
+                >
+                    Sign Up
+                </button>
+            </form>
+        </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8 px-4 sm:px-6 lg:px-8">
