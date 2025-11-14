@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Startup Landing Page</title>
-    <script type="module" crossorigin src="./assets/index-rIkq54w_.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-pxhKUOzN.css">
+    <script type="module" crossorigin src="./assets/index-F2CvlIYd.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C5ieucTM.css">
   </head>
   <body class="antialiased">
     <!-- Navigation -->
@@ -40,8 +40,61 @@
             See How It Works
           </a>
         </div>
-          <div class="py-20">
-              TODO: Some caroussel of logos
+
+          <!-- Logo Carousel -->
+          <div class="py-32">
+            <p class="text-sm font-semibold text-gray-500 text-center mb-8">Trusted and backed by</p>
+            <div class="logo-carousel-container">
+              <div class="logo-carousel">
+                <!-- Row 1 -->
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#3b82f6"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">TechCorp</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#10b981"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">DataFlow</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#8b5cf6"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">SecureAI</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#f59e0b"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CloudBase</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#ef4444"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Innovation</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#06b6d4"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">NextGen</text></svg>
+                  </div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#3b82f6"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">TechCorp</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#10b981"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">DataFlow</text></svg>
+                  </div>
+                </div>
+                <div class="logo-item">
+                  <div class="logo-placeholder">
+                    <svg width="120" height="40" viewBox="0 0 120 40"><rect width="120" height="40" rx="4" fill="#8b5cf6"/><text x="60" y="24" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">SecureAI</text></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
       </div>
     </section>
@@ -49,7 +102,7 @@
     <!-- Overview Section -->
     <section id="overview" class="px-4 sm:px-6 lg:px-8 bg-white">
       <div class="max-w-6xl mx-auto">
-        <p class="text-2xl md:text-3xl font-normal text-center mb-16">Execute critical steps at a higher security level when it matters most.</p>
+        <p class="text-3xl md:text-3xl font-normal text-center mb-16">Execute critical steps at a higher security level when it matters most.</p>
 
         <!-- Network Diagram -->
         <div class="architecture-diagram relative h-[600px] max-w-6xl mx-auto">
@@ -171,6 +224,10 @@
       </div>
     </section>
 
+    <section id="demo">
+
+    </section>
+
     <!-- Features Section -->
     <section id="features" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div class="max-w-4xl mx-auto">
@@ -182,49 +239,142 @@
     </section>
 
     <!-- Comparison Section -->
-    <section id="comparison" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-      <div class="max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Comparison with competitors</h2>
-        <div class="overflow-x-auto">
-          <table class="w-full border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
-            <thead class="bg-gray-50">
+    <section id="comparison" class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">AI Agents You Can Trust</h2>
+        <p class="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">Our AI models operate under strong cryptographic protection, not hardware trust, so your privacy relies on math instead of hardware providers.</p>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
               <tr>
-                <th class="px-6 py-4 text-left text-sm font-semibold text-gray-900">Feature</th>
-                <th class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Our Solution</th>
-                <th class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Tinfoil</th>
-                <th class="px-6 py-4 text-center text-sm font-semibold text-gray-900">Cloud AI</th>
+                <th class="feature-col">
+                  <span class="feature-header">Feature</span>
+                </th>
+                <th class="competitor-col">
+                  <div class="competitor-header">
+                    <span class="competitor-name">OpenAI</span>
+                  </div>
+                </th>
+                <th class="competitor-col">
+                  <div class="competitor-header">
+                    <span class="competitor-name">Tinfoil</span>
+                  </div>
+                </th>
+                <th class="our-solution-col">
+                  <div class="our-solution-header">
+                    <span class="our-solution-name">Our Solution</span>
+                  </div>
+                </th>
               </tr>
             </thead>
-            <tbody class="divide-y divide-gray-200">
-              <tr class="bg-white">
-                <td class="px-6 py-4 text-sm text-gray-900">Open Models</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
+            <tbody>
+              <!-- Data Privacy Category -->
+              <tr class="category-row">
+                <td colspan="4" class="category-header">
+                  <span class="category-icon">🔒</span>
+                  <span class="category-title">Data Privacy</span>
+                </td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="px-6 py-4 text-sm text-gray-900">Cryptographic Privacy</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
+              <tr>
+                <td class="feature-name">Cryptographic Privacy</td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
               </tr>
-              <tr class="bg-white">
-                <td class="px-6 py-4 text-sm text-gray-900">Never uses your data to train AI</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
+              <tr>
+                <td class="feature-name">Zero Data Retention</td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
               </tr>
-              <tr class="bg-gray-50">
-                <td class="px-6 py-4 text-sm text-gray-900">Zero Data Retention</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
+              <tr>
+                <td class="feature-name">Never trains on your data</td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
               </tr>
-              <tr class="bg-white">
-                <td class="px-6 py-4 text-sm text-gray-900">AI Agents</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
-                <td class="px-6 py-4 text-center text-xl">❌</td>
-                <td class="px-6 py-4 text-center text-xl">✅</td>
+
+              <!-- Features Category -->
+              <tr class="category-row">
+                <td colspan="4" class="category-header">
+                  <span class="category-icon">⚡</span>
+                  <span class="category-title">Features</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">AI Agents</td>
+                <td class="competitor-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Open Models Support</td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-no">✗</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-yes">✓</span>
+                </td>
+              </tr>
+
+              <!-- Cloud Convenience Category -->
+              <tr class="category-row">
+                <td colspan="4" class="category-header">
+                  <span class="category-icon">☁️</span>
+                  <span class="category-title">Cloud Convenience</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Setup Complexity</td>
+                <td class="competitor-cell">
+                  <span class="indicator-metric low">Low</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-metric high">High</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-metric low">Low</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="feature-name">Scalability</td>
+                <td class="competitor-cell">
+                  <span class="indicator-metric high">High</span>
+                </td>
+                <td class="competitor-cell">
+                  <span class="indicator-metric high">High</span>
+                </td>
+                <td class="our-solution-cell">
+                  <span class="indicator-metric high">High</span>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -251,7 +401,7 @@
     <!-- CTA Section -->
     <section id="cta" class="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+        <h2 class="text-4xl font-bold text-white mb-6">Get Started with StartupName?</h2>
         <p class="text-xl text-blue-100 mb-8">Join thousands of companies already using our platform to transform their business.</p>
         <form id="cta-form" class="flex gap-4 max-w-md mx-auto flex-col sm:flex-row">
           <input
